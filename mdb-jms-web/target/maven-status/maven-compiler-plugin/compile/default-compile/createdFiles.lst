@@ -1,0 +1,9 @@
+com/ifpb/mdb/jms/daos/ProdutoDao.class
+com/ifpb/mdb/jms/daos/ClienteDao.class
+com/ifpb/mdb/jms/iniciar/IniciarJms.class
+com/ifpb/mdb/jms/web/controladores/ControladorDeProduto.class
+com/ifpb/mdb/jms/web/controladores/ControladorCarrinho.class
+com/ifpb/mdb/jms/web/controladores/ControladorCliente.class
+com/ifpb/mdb/jms/web/EnviarMensagemFinal.class
+com/ifpb/mdb/jms/web/controladores/ControladorDeCadastro.class
+com/ifpb/mdb/jms/web/CarrinhoOnline.class
