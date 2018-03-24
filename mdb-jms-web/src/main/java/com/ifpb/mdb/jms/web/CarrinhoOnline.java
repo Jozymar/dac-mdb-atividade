@@ -6,7 +6,7 @@ import com.ifpb.mdb.shared.modelo.Produto;
 import com.ifpb.mdb.shared.servico.ServicoCarrinho;
 import java.util.Collections;
 import java.util.List;
-import javax.ejb.Remote;
+import javax.ejb.Local;
 import javax.ejb.Remove;
 import javax.ejb.Stateful;
 import javax.inject.Inject;
@@ -16,7 +16,7 @@ import javax.inject.Inject;
  * @author jozimar
  */
 @Stateful
-@Remote(ServicoCarrinho.class)
+@Local(ServicoCarrinho.class)
 public class CarrinhoOnline implements ServicoCarrinho {
 
     private Pedido pedido = new Pedido();

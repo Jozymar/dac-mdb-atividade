@@ -6,10 +6,10 @@ import com.ifpb.mdb.shared.servico.ServicoCarrinho;
 import java.io.Serializable;
 import java.util.List;
 import javax.annotation.PostConstruct;
-import javax.ejb.EJB;
 import javax.enterprise.context.SessionScoped;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
+import javax.inject.Inject;
 import javax.inject.Named;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -23,7 +23,7 @@ import javax.servlet.http.HttpSession;
 @SessionScoped
 public class ControladorCarrinho implements Serializable {
 
-    @EJB
+    @Inject
     private ServicoCarrinho carrinho;
 
     private Produto produto = new Produto();
@@ -39,7 +39,7 @@ public class ControladorCarrinho implements Serializable {
     @PostConstruct
     public void init() {
         externalContext = FacesContext.getCurrentInstance().getExternalContext();
-        sessao = (HttpSession) externalContext.getSession(true);
+        sessao = (HttpSession) externalContext.getSession(false);
         cliente = (Cliente) sessao.getAttribute("cliente");
         this.carrinho.addCliente(cliente);
     }

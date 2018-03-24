@@ -54,9 +54,11 @@
                     <h:outputText value="#{produto.preco}" />
                 </h:column>
                 <h:column>
-                    <f:facet name="header">Compre</f:facet>
+                    <f:facet name="header">Comprar</f:facet>
                     <h:form>
-                        <h:commandButton value="Comprar" class="waves-effect waves-light btn" action="#{controladorCarrinho.adicionarProduto(produto)}"/>
+                        <h:commandLink class="btn-floating waves-effect waves-light btn" action="#{controladorCarrinho.adicionarProduto(produto)}">  
+                            <i class="material-icons right">add_shopping_cart</i>
+                        </h:commandLink>
                     </h:form>
                 </h:column>
             </h:dataTable>
@@ -81,7 +83,9 @@
                 <h:column>
                     <f:facet name="header">Remover</f:facet>
                     <h:form>
-                        <h:commandButton value="Remover" class="waves-effect waves-light btn" action="#{controladorCarrinho.removerProduto(produtoCarrinho)}"/>
+                        <h:commandLink class="btn-floating btn-flat waves-effect waves-light red" action="#{controladorCarrinho.removerProduto(produtoCarrinho)}">
+                            <i class="material-icons right">delete_forever</i>
+                        </h:commandLink>
                     </h:form>
                 </h:column>     
             </h:dataTable>

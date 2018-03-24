@@ -19,6 +19,12 @@ public class RespostaDoProcessamento implements Serializable {
         this.emailUsuario = emailUsuario;
     }
 
+    public RespostaDoProcessamento(String emailUsuario, String mensagem, int codigoPedido) {
+        this.emailUsuario = emailUsuario;
+        this.mensagem = mensagem;
+        this.codigoPedido = codigoPedido;
+    }
+
     public String getEmailUsuario() {
         return emailUsuario;
     }
