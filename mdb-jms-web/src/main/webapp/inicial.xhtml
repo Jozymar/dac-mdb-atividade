@@ -27,8 +27,8 @@
                     <a href="inicial.xhtml" class="brand-logo"><img src="imagens/icone.png" width="8%" alt="logo" class="circle"/></a>
                     <ul class="right hide-on-med-and-down">
                         <h:form>
-                            <li><a><i class="material-icons left">person</i>#{controladorCliente.getNomeSession()}</a></li>
-                            <li><a jsf:action="#{controladorCliente.realizarLogout()}"><i class="material-icons right">input</i>Logout</a></li>
+                            <li><a><i class="material-icons left">person</i>#{controladorDeCliente.getNomeSession()}</a></li>
+                            <li><a jsf:action="#{controladorDeCliente.realizarLogout()}"><i class="material-icons right">input</i>Logout</a></li>
                         </h:form>
                     </ul>
                 </div>
@@ -56,7 +56,7 @@
                 <h:column>
                     <f:facet name="header">Comprar</f:facet>
                     <h:form>
-                        <h:commandLink class="btn-floating waves-effect waves-light btn" action="#{controladorCarrinho.adicionarProduto(produto)}">  
+                        <h:commandLink class="btn-floating waves-effect waves-light btn" action="#{controladorDeCarrinho.adicionarProduto(produto)}">  
                             <i class="material-icons right">add_shopping_cart</i>
                         </h:commandLink>
                     </h:form>
@@ -67,7 +67,7 @@
                 <h5>Meu Carrinho</h5>
             </div>
 
-            <h:dataTable value="#{controladorCarrinho.todosOsProdutos()}" var="produtoCarrinho" style="margin-bottom: 5%">
+            <h:dataTable value="#{controladorDeCarrinho.todosOsProdutos()}" var="produtoCarrinho" style="margin-bottom: 5%">
                 <h:column>
                     <f:facet name="header">Código</f:facet>
                     <h:outputText value="#{produtoCarrinho.id}" />
@@ -83,7 +83,7 @@
                 <h:column>
                     <f:facet name="header">Remover</f:facet>
                     <h:form>
-                        <h:commandLink class="btn-floating btn-flat waves-effect waves-light red" action="#{controladorCarrinho.removerProduto(produtoCarrinho)}">
+                        <h:commandLink class="btn-floating btn-flat waves-effect waves-light red" action="#{controladorDeCarrinho.removerProduto(produtoCarrinho)}">
                             <i class="material-icons right">delete_forever</i>
                         </h:commandLink>
                     </h:form>
@@ -91,7 +91,7 @@
             </h:dataTable>
             <div class="input-field" align="center" style="margin-bottom: 5%">
                 <h:form>
-                    <h:commandButton value="Finalizar" class="waves-effect waves-light btn" action="#{controladorCarrinho.finalizarCompra()}"/>
+                    <h:commandButton value="Finalizar" class="waves-effect waves-light btn" action="#{controladorDeCarrinho.finalizarCompra()}"/>
                 </h:form>
             </div>
         </div>

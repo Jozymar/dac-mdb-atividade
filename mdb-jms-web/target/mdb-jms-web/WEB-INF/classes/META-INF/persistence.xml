@@ -2,9 +2,9 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="persistencia" transaction-type="JTA">
     <jta-data-source>java:app/persistencia</jta-data-source>
-    <class>com.ifpb.mdb.shared.modelo.Cliente</class>
-    <class>com.ifpb.mdb.shared.modelo.Pedido</class>
-    <class>com.ifpb.mdb.shared.modelo.Produto</class>
+    <class>com.ifpb.mdb.jms.shared.modelo.Cliente</class>
+    <class>com.ifpb.mdb.jms.shared.modelo.Pedido</class>
+    <class>com.ifpb.mdb.jms.shared.modelo.Produto</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.schema-generation.database.action" value="create"/>

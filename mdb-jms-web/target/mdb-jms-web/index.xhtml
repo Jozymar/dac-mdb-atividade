@@ -43,16 +43,16 @@
                         <div class="row">
                             <div class="input-field">
                                 <i class="material-icons prefix">account_circle</i>
-                                <h:inputText id="email" class="validate" value="#{controladorCliente.cliente.email}" required="true"/>
+                                <h:inputText id="email" class="validate" value="#{controladorDeCliente.cliente.email}" required="true"/>
                                 <label for="email">Usuário</label>
                             </div>
                             <div class="input-field">
                                 <i class="material-icons prefix">lock</i>
-                                <h:inputSecret id="senha" class="validate" value="#{controladorCliente.cliente.senha}" required="true"/>
+                                <h:inputSecret id="senha" class="validate" value="#{controladorDeCliente.cliente.senha}" required="true"/>
                                 <label for="senha">Senha</label>
                             </div>
                             <div class="input-field" align="center">
-                                <h:commandButton class="waves-effect waves-light btn-large" action="#{controladorCliente.realizarlogin()}" value="Login"/>
+                                <h:commandButton class="waves-effect waves-light btn-large" action="#{controladorDeCliente.realizarlogin()}" value="Login"/>
                             </div>
                             <div class="input-field" align="center">
                                 Não é cadastrado?<a href="cadastro.xhtml"> Clique aqui</a>

@@ -38,16 +38,16 @@
                     <h:form>
                         <div class="input-field">
                             <i class="material-icons prefix">shopping_basket</i>
-                            <h:inputText id="nome" class="validate" value="#{controladorDeCadastro.produto.descricao}" rendered="true"/>
+                            <h:inputText id="descricao" class="validate" value="#{controladorDeProduto.produto.descricao}" required="true"/>
                             <label for="descricao">Descrição</label>
                         </div>            
                         <div class="input-field">
                             <i class="material-icons prefix">monetization_on</i>
-                            <h:inputText id="email" class="validate" value="#{controladorDeCadastro.produto.preco}" required="true"/>
+                            <h:inputText id="preco" class="validate" value="#{controladorDeProduto.produto.preco}" required="true"/>
                             <label for="preco">Preço</label>
                         </div>          
                         <div class="input-field" align="center">
-                            <h:commandButton value="Cadastrar" class="waves-effect waves-light btn-large" action="#{controladorDeCadastro.cadastrarProduto()}"/>
+                            <h:commandButton value="Cadastrar" class="waves-effect waves-light btn-large" action="#{controladorDeProduto.cadastrarProduto()}"/>
                         </div>
                     </h:form>
                 </div> 
