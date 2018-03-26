@@ -23,7 +23,6 @@ import javax.jms.MessageListener;
             ,
             @ActivationConfigProperty(propertyName = "destinationName", propertyValue = "queueProcessar"),}
 )
-@Stateless
 public class ConsumidorProcessar implements MessageListener {
 
     @Inject

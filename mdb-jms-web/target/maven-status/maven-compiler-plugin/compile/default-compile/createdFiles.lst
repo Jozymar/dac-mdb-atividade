@@ -1,9 +1,12 @@
+com/ifpb/mdb/jms/web/controladores/ControladorDeVitrine.class
 com/ifpb/mdb/jms/web/controladores/ControladorDeCliente.class
 com/ifpb/mdb/jms/web/servico/EnviarMensagemFinal.class
 com/ifpb/mdb/jms/web/controladores/ControladorDeProduto.class
-com/ifpb/mdb/jms/web/filtro/FiltroCarrinho.class
 com/ifpb/mdb/jms/web/dao/ProdutoDao.class
 com/ifpb/mdb/jms/web/dao/ClienteDao.class
+com/ifpb/mdb/jms/web/controladores/ControladorDeCarrinho.class
+com/ifpb/mdb/jms/web/servico/GeradorRandomico.class
+com/ifpb/mdb/jms/web/servico/BuscarProdutoEmDestaque.class
+com/ifpb/mdb/jms/web/filtro/FiltroCarrinho.class
 com/ifpb/mdb/jms/web/servico/CarrinhoOnline.class
 com/ifpb/mdb/jms/web/iniciar/IniciarJms.class
-com/ifpb/mdb/jms/web/controladores/ControladorDeCarrinho.class

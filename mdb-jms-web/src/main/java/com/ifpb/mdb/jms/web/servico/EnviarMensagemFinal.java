@@ -5,6 +5,7 @@ import javax.annotation.Resource;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.jms.JMSContext;
+import javax.jms.JMSDestinationDefinition;
 import javax.jms.JMSProducer;
 import javax.jms.Topic;
 
@@ -12,6 +13,12 @@ import javax.jms.Topic;
  *
  * @author jozimar
  */
+@JMSDestinationDefinition(
+            name = "java:global/jms/TopicFinalizar",
+            interfaceName = "javax.jms.Topic",
+            resourceAdapter = "jmsra",
+            destinationName = "TopicFinalizar"
+    )
 @Stateless
 public class EnviarMensagemFinal {
 

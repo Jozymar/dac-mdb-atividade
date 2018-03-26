@@ -5,6 +5,7 @@ import javax.annotation.Resource;
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 import javax.jms.JMSContext;
+import javax.jms.JMSDestinationDefinition;
 import javax.jms.JMSProducer;
 import javax.jms.Queue;
 
@@ -12,6 +13,12 @@ import javax.jms.Queue;
  *
  * @author jozimar
  */
+@JMSDestinationDefinition(
+        name = "java:global/jms/queueProcessar",
+        interfaceName = "javax.jms.Queue",
+        resourceAdapter = "jmsra",
+        destinationName = "queueProcessar")
+
 @Stateless
 public class ProdutorCartaoDeCredito {
 
