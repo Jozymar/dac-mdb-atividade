@@ -8,15 +8,13 @@
 
 #### Implantação:
 
-##### 1 - Abra o projeto em sua IDE
+##### 1 - Abra o projeto dac-mdb-atividade em sua IDE
 
-##### 2 - Abra o projeto dac-mdb-atividade
+##### 2 - Execute o módulo mdb-jms-web
 
-##### 3 - Execute o módulo mdb-jms-web
+##### 3 - Execute o módulo mdb-jms-email
 
-##### 4 - Execute o módulo mdb-jms-email
-
-##### 5 - Execute o módulo mdb-jms-cartcredit
+##### 4 - Execute o módulo mdb-jms-cartcredit
 
 ----------------------------------------------
 
