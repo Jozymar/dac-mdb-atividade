@@ -1,12 +1,13 @@
+/home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/iniciar/IniciarProdutos.java
 /home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/servico/GeradorRandomico.java
-/home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/controladores/ControladorDeVitrine.java
 /home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/iniciar/IniciarJms.java
-/home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/servico/BuscarProdutoEmDestaque.java
 /home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/servico/CarrinhoOnline.java
 /home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/dao/ClienteDao.java
 /home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/controladores/ControladorDeCarrinho.java
 /home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/filtro/FiltroCarrinho.java
-/home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/servico/EnviarMensagemFinal.java
 /home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/controladores/ControladorDeProduto.java
+/home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/controladores/ControladorDeVitrine.java
+/home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/servico/BuscarProdutoEmDestaque.java
+/home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/servico/EnviarMensagemFinal.java
 /home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/controladores/ControladorDeCliente.java
 /home/jozimar/Imagens/dac-mdb-atividade/mdb-jms-web/src/main/java/com/ifpb/mdb/jms/web/dao/ProdutoDao.java

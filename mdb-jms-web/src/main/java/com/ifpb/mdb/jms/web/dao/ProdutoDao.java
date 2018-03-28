@@ -42,9 +42,46 @@ public class ProdutoDao implements DaoProduto {
     }
 
     @Override
+    public int retornarLimiteDeId() {
+        String querySql = "SELECT max(produto.id) FROM Produto produto";
+        TypedQuery<Integer> query = em
+                .createQuery(querySql, int.class);
+        return query.getSingleResult();
+
+    }
+
+    @Override
+    public Produto buscarProdutoporId(int id) {
+        String querySql = "SELECT produto FROM Produto produto WHERE produto.id=:id";
+        TypedQuery<Produto> query = em
+                .createQuery(querySql, Produto.class
+                );
+        query.setParameter("id", id);
+        Optional<Produto> produto = query.getResultList().stream().findFirst();
+        if (produto.isPresent()) {
+            return produto.get();
+        } else {
+            return null;
+        }
+    }
+
+    @Override
+    public boolean produtoExiste(int id) {
+        String querySql = "SELECT produto FROM Produto produto "
+                + "WHERE produto.id=:id";
+        TypedQuery<Produto> query = em
+                .createQuery(querySql, Produto.class
+                );
+        query.setParameter("id", id);
+        Optional<Produto> produto = query.getResultList().stream().findFirst();
+        return produto.isPresent();
+    }
+
+    @Override
     public List<Produto> todosOsProdutos() {
         String sqlQuery = "SELECT produto FROM Produto produto ";
-        TypedQuery<Produto> query = em.createQuery(sqlQuery, Produto.class);
+        TypedQuery<Produto> query = em.createQuery(sqlQuery, Produto.class
+        );
         if (query.getResultList() == null) {
             return new ArrayList<>();
         }

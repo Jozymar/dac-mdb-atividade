@@ -1,3 +1,4 @@
+com/ifpb/mdb/jms/web/iniciar/IniciarProdutos.class
 com/ifpb/mdb/jms/web/controladores/ControladorDeVitrine.class
 com/ifpb/mdb/jms/web/controladores/ControladorDeCliente.class
 com/ifpb/mdb/jms/web/servico/EnviarMensagemFinal.class

@@ -14,4 +14,10 @@ public interface DaoProduto {
     public Produto consultarPorDescricao(String descricao);
 
     public List<Produto> todosOsProdutos();
+
+    public int retornarLimiteDeId();
+
+    public Produto buscarProdutoporId(int id);
+
+    public boolean produtoExiste(int id);
 }

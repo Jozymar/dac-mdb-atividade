@@ -23,7 +23,6 @@ public class ControladorDeProduto {
     private DaoProduto daoProduto;
 
     public String cadastrarProduto() {
-
         if (daoProduto.consultarPorDescricao(produto.getDescricao()) != null) {
             mensagemErro("Cadastro de Produtos", "Já existe um produto cadastrado "
                     + "com a descrição informada!");
